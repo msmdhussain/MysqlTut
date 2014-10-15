@@ -6,6 +6,11 @@ mysqldump is an effective tool to backup MySQL database. It creates a *.sql file
 
  restore: mysql -u root -p[root_password] [database_name] < dumpfilename.sql
 
+ Dump without data :
+  -----------------
+
+mysqldump -u [user] -h [localhost] --no-data -p[password] [database] > database.sql
+
  Backup a single database:
  -------------------------
 
